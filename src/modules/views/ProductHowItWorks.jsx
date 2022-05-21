@@ -4,7 +4,6 @@ import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import Button from '../components/Button';
 import Typography from '../components/Typography';
-import { height } from '@mui/system';
 import PersonRoundedIcon from '@mui/icons-material/PersonRounded';
 import TravelExploreOutlinedIcon from '@mui/icons-material/TravelExploreOutlined';
 import InventoryOutlinedIcon from '@mui/icons-material/InventoryOutlined';
@@ -16,10 +15,6 @@ const item = {
   px: 5,
 };
 
-/* const image = {
-  height: 55,
-  my: 4,
-}; */
 
 function ProductHowItWorks() {
   return (
@@ -86,7 +81,7 @@ function ProductHowItWorks() {
           size="large"
           variant="contained"
           component="a"
-          href="/premium-themes/onepirate/sign-up/"
+          href="/signup"
           sx={{ mt: 8 }}
         >
           Get started

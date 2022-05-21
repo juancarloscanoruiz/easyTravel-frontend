@@ -1,22 +1,22 @@
-/* import { useEffect, useState } from "react";
+//import { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
-import { getLoggedIn, logout } from "./services/auth";
-import routes from "./config/routes";
-import * as USER_HELPERS from "./utils/userToken";
-import AppAppBar from "./modules/views/AppAppBar";
-import AppFooter from "./modules/views/AppFooter";
-import ProductCTA from "./modules/views/ProductCTA";
-import ProductCategories from "./modules/views/ProductCategories";
-import ProductHero from "./modules/views/ProductHero";
-import ProductHowItWorks from "./modules/views/ProductHowItWorks";
-import ProductSmokingHero from "./modules/views/ProductSmokingHero";
-import ProductValues from "./modules/views/ProductValues";
-import withRoot from './modules/withRoot';
-import SignUp from "./pages/SignUp"; */
+//import { getLoggedIn, logout } from "./services/auth";
+//import routes from "./config/routes";
+//import * as USER_HELPERS from "./utils/userToken";
+import AppAppBar from "../modules/views/AppAppBar";
+import AppFooter from "../modules/views/AppFooter";
+import ProductCTA from "../modules/views/ProductCTA";
+import ProductCategories from "../modules/views/ProductCategories";
+import ProductHero from "../modules/views/ProductHero";
+import ProductHowItWorks from "../modules/views/ProductHowItWorks";
+import ProductSmokingHero from "../modules/views/ProductSmokingHero";
+import ProductValues from "../modules/views/ProductValues";
+import withRoot from '../modules/withRoot';
+import SignUp from "./SignUp";
 
 
-// function App() {
-/*   const [user, setUser] = useState(null);
+function App() {
+/* const [user, setUser] = useState(null);
 
   useEffect(() => {
     const accessToken = USER_HELPERS.getUserToken();
@@ -57,21 +57,21 @@ import SignUp from "./pages/SignUp"; */
   if (isLoading) {
     return ;
   } */
-  /* return (
-    <div className="App"> */
-      {/* <AppAppBar/>
+  return (
+    <div className="App">
+      <AppAppBar/>
       <ProductHero/>
       <ProductValues/>
       <ProductCategories/>
       <ProductHowItWorks/>
       <ProductCTA/>
       <ProductSmokingHero/>
-      <AppFooter/> */}
-      {/* <Routes>
-        <Route exact path="/" element={<ProductHero/>} /> 
+      <AppFooter/> 
+      <Routes>
+        {/* <Route exact path="/" element={<Homepage/>} />  */}
         <Route exact path="/signup" element={<SignUp/>} />
       </Routes>
     </div>
   );
 }
-export default withRoot(App); */}
+export default withRoot(App); 

@@ -4,17 +4,17 @@ import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import Typography from '../components/Typography';
 import TextField from '../components/TextField';
-import Snackbar from '../components/Snackbar';
 import Button from '../components/Button';
 
 function ProductCTA() {
+  // eslint-disable-next-line
   const [open, setOpen] = React.useState(false);
 
   const handleSubmit = (event) => {
     event.preventDefault();
     setOpen(true);
   };
-
+// eslint-disable-next-line
   const handleClose = () => {
     setOpen(false);
   };
@@ -89,8 +89,6 @@ function ProductCTA() {
           />
         </Grid>
       </Grid>
-      <Snackbar
-        />
     </Container>
   );
 }

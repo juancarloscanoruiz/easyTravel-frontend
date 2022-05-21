@@ -31,7 +31,7 @@ function AppAppBar() {
               color="black"
               variant="h6"
               underline="none"
-              href="/src/SignIn/"
+              href={PATHS.LOGINPAGE}
               sx={rightLink}
             >
               {'Sign In'}

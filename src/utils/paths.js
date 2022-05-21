@@ -1,4 +1,4 @@
 export const HOMEPAGE = "/";
 export const SIGNUPPAGE = "/signup";
-export const LOGINPAGE = "/src/SignIn";
+export const LOGINPAGE = "/login";
 //export const PROTECTEDPAGE = "/protected";

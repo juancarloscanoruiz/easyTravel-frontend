@@ -18,12 +18,7 @@ function ProductValues() {
       sx={{ display: 'flex', overflow: 'hidden', bgcolor: '#fff8e1' }}
     >
       <Container sx={{ mt: 15, mb: 30, display: 'flex', position: 'relative' }}>
-        <Box
-          component="img"
-          src="/images/textura.png"
-          alt="curvy lines"
-          sx={{ pointerEvents: 'none', position: 'absolute', top: -180 }}
-        />
+        
         <Grid container spacing={5}>
           <Grid item xs={12} md={4}>
             <Box sx={item}>
@@ -34,15 +29,11 @@ function ProductValues() {
                 sx={{ height: 55 }}
               />
               <Typography variant="h6" sx={{ my: 5 }}>
-                The best luxury hotels
+              Your own travel agency
               </Typography>
               <Typography variant="h5">
                 {
-                  'From the latest trendy boutique hotel to the iconic palace with XXL pool'
-                }
-
-                {
-                  ', go for a mini-vacation just a few subway stops away from your home.'
+                  'If your thing is to create your vacation on your own, we will help you design it and keep a list of expenses that you will need.'
                 }
               </Typography>
             </Box>
@@ -56,14 +47,13 @@ function ProductValues() {
                 sx={{ height: 55 }}
               />
               <Typography variant="h6" sx={{ my: 5 }}>
-                New experiences
+              A new way to organize your trip
               </Typography>
               <Typography variant="h5">
                 {
-                  'Privatize a pool, take a Japanese bath or wake up in 900m2 of garden… '
+                'The idea is that you can plan your next vacation and take it to the second step of creating your travel package by controlling your expenses.'
                 }
 
-                {'your Sundays will not be alike.'}
               </Typography>
             </Box>
           </Grid>
@@ -76,11 +66,10 @@ function ProductValues() {
                 sx={{ height: 55 }}
               />
               <Typography variant="h6" sx={{ my: 5 }}>
-                Exclusive rates
+              Share and learn from everyone
               </Typography>
               <Typography variant="h5">
-                {'By registering, you will access specially negotiated rates '}
-                {'that you will not find anywhere else.'}
+                {'We share tips that will help you save. You can share your experiences with the community we created and learn about their experiences.'}
               </Typography>
             </Box>
           </Grid>

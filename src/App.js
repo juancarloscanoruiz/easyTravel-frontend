@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
+//import { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
-import { getLoggedIn, logout } from "./services/auth";
+/* import { getLoggedIn, logout } from "./services/auth";
 import routes from "./config/routes";
 import * as USER_HELPERS from "./utils/userToken";
 import AppAppBar from "./modules/views/AppAppBar";
@@ -9,11 +9,17 @@ import ProductCTA from "./modules/views/ProductCTA";
 import ProductCategories from "./modules/views/ProductCategories";
 import ProductHero from "./modules/views/ProductHero";
 import ProductHowItWorks from "./modules/views/ProductHowItWorks";
-import ProductSmokingHero from "./modules/views/ProductSmokingHero";
-import ProductValues from "./modules/views/ProductValues";
+import ProductSmokingHero from "./modules/views/ProductSmokingHero"; */
 import withRoot from './modules/withRoot';
 import SignUp from "./pages/SignUp";
-import SignIn from "./pages/SignIn";
+import LogIn from "./pages/LogIn";
+import Home from "./pages/home"
+import Paquetes from "./pages/Paquetes";
+import Reviews from "./pages/Reviews";
+import TipsViajeros from "./pages/TipsViajeros";
+import Viajes from "./pages/Viajes";
+import Profile from "./pages/Profile";
+
 
 
 function App() {
@@ -60,20 +66,17 @@ function App() {
   } */
   return (
     <div className="App">
-      <AppAppBar/>
-      <ProductHero/>
-      <ProductValues/>
-      <ProductCategories/>
-      <ProductHowItWorks/>
-      <ProductCTA/>
-      <ProductSmokingHero/>
-      <AppFooter/>
       <Routes>
-        {/* <Route exact path="/" element={<HOMEPAGE/>} />  */}
+        <Route exact path="*" element={<Home/>} /> 
         <Route exact path="/signup" element={<SignUp/>} />
-        {/* <Route exact path="/sigin" element={<SignIn/>} /> */}
+        <Route path="/login" element={<LogIn />} />
+        <Route path='/packages' element={<Paquetes />} />
+        <Route path='/reviews' element={<Reviews />} />
+        <Route path="/tips" element={<TipsViajeros />} />
+        <Route path="/trips" element={<Viajes />} />
+        <Route path="/profile" element={<Profile />} />
 
-      </Routes>
+     </Routes>
     </div>
   );
 }

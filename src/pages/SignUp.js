@@ -42,7 +42,7 @@ function SignUp() {
             Sign Up
           </Typography>
           <Typography variant="body2" align="center">
-            <Link href="/src/SignIn/" underline="always">
+            <Link href="/login" underline="always">
               Already have an account?
             </Link>
           </Typography>
@@ -114,6 +114,7 @@ function SignUp() {
                 disabled={submitting || sent}
                 color="secondary"
                 fullWidth
+                href="/profile"
               >
                 {submitting || sent ? 'In progress…' : 'Sign Up'}
               </FormButton>

@@ -43,7 +43,7 @@ function SignIn() {
           <Typography variant="body2" align="center">
             {'Not a member yet? '}
             <Link
-              href="/src/SignIn.js"
+              href="/signup"
               align="center"
               underline="always"
             >
@@ -97,17 +97,13 @@ function SignIn() {
                 size="large"
                 color="secondary"
                 fullWidth
+                href="/profile"
               >
                 {submitting || sent ? 'In progress…' : 'Sign In'}
               </FormButton>
             </Box>
           )}
         </Form>
-        <Typography align="center">
-          <Link underline="always" href="/premium-themes/onepirate/forgot-password/">
-            Forgot password?
-          </Link>
-        </Typography>
       </AppForm>
       <AppFooter />
     </React.Fragment>

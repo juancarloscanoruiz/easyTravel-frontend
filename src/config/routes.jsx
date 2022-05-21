@@ -1,7 +1,7 @@
 import { Navigate } from "react-router-dom";
 import AppAppBar from "../modules/views/AppAppBar";
-import Login from "../pages/SignIn";
 import Signup from "../pages/SignUp";
+import Login from "../pages/LogIn";
 //import ProtectedPage from "../pages/ProtectedPage";
 import * as PATHS from "../utils/paths";
 
