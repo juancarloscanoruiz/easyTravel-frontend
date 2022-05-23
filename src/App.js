@@ -14,12 +14,11 @@ import withRoot from './modules/withRoot';
 import SignUp from "./pages/SignUp";
 import LogIn from "./pages/LogIn";
 import Home from "./pages/home"
-import Paquetes from "./pages/Paquetes";
+import Packages from "./pages/Packages";
 import Reviews from "./pages/Reviews";
-import TipsViajeros from "./pages/TipsViajeros";
-import Viajes from "./pages/Viajes";
+import Tips from "./pages/Tips";
+import Trips from "./pages/Trips";
 import Profile from "./pages/Profile";
-
 
 
 function App() {
@@ -67,13 +66,13 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route exact path="*" element={<Home/>} /> 
-        <Route exact path="/signup" element={<SignUp/>} />
+        <Route path="*" element={<Home/>} /> 
+        <Route path="/signup" element={<SignUp/>} />
         <Route path="/login" element={<LogIn />} />
-        <Route path='/packages' element={<Paquetes />} />
+        <Route path='/packages' element={<Packages />} />
         <Route path='/reviews' element={<Reviews />} />
-        <Route path="/tips" element={<TipsViajeros />} />
-        <Route path="/trips" element={<Viajes />} />
+        <Route path="/tips" element={<Tips/>} />
+        <Route path="/trips" element={<Trips />} />
         <Route path="/profile" element={<Profile />} />
 
      </Routes>

@@ -67,10 +67,6 @@ function App() {
       <ProductCTA/>
       <ProductSmokingHero/>
       <AppFooter/> 
-      <Routes>
-        {/* <Route exact path="/" element={<Homepage/>} />  */}
-        <Route exact path="/signup" element={<SignUp/>} />
-      </Routes>
     </div>
   );
 }
